@@ -1,0 +1,39 @@
+{
+  "templates": {
+    "home.html": {
+      "hideContent": true,
+      "placeholders": [
+        {
+          "key": "tagline",
+          "short": {
+            "type": "text"
+          }
+        },
+        {
+          "key": "promo1",
+          "text": {
+            "type": "markdown"
+          }
+        },
+        {
+          "key": "promo2",
+          "text": {
+            "type": "markdown"
+          }
+        },
+        {
+          "key": "promo3",
+          "text": {
+            "type": "markdown"
+          }
+        },
+        {
+          "key": "promo4",
+          "text": {
+            "type": "markdown"
+          }
+        }
+      ]
+    }
+  }
+}
