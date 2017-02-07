@@ -1,4 +1,5 @@
 {
+  "name": "ketchup",
   "templates": {
     "home.html": {
       "hideContent": true,

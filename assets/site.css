@@ -27,19 +27,36 @@ html, body, #app, .container {
   text-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
-.nav {
-  position: absolute;
-  top: 20px;
-  right: 15%;
+#home .nav, #home .header-inner {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.nav a {
+#home .nav {
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+#home .nav .nav-title {
+  float: left;
+}
+
+#home .nav .nav-title a {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 22px
+}
+
+#home .nav .nav-right {
+  float: right;
+}
+
+#home .nav a {
   font-size: 14px;
   text-decoration: none;
   padding: 15px;
 }
 
-.nav a:hover::after {
+#home .nav a:hover::after {
   content: '!';
   position: absolute;
   margin-top: 2px;
@@ -54,10 +71,12 @@ html, body, #app, .container {
   background-position: center center;
   background-image: url(https://unsplash.it/g/1024/768/?random);
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+#home .header-inner {
+  margin: 100px auto 0;
   text-align: center;
+  clear: both;
 }
 
 #home .header-title {
@@ -93,68 +112,9 @@ html, body, #app, .container {
   #home .content-box {
     width: 100%;
   }
-}
-.container {
-  color: #333;
-  display: flex;
-  width: 920px;
-}
-
-#app .content {
-  flex-grow: 1;
-  padding-left: 25px;
-}
-
-#app .content h1 {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
-
-.section-title {
-  padding: 10px 15px;
-}
-
-.navigation {
-  border-right: 1px solid #eee;
-  background: #f9f9f9;
-}
-
-.navigation iframe {
-  border: 0;
-  height: 100%;
-  width: 200px;
-  outline: 0;
-}
-
-#nav {
-  padding: 10px;
-  align-self: stretch;
-  font-size: 14px;
-}
-
-#nav ul {
-  margin: 0;
-  padding: 0;
-}
-#nav li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  height: 30px;
-}
-
-#nav a {
-  width: 100%;
-  height: 100%;
-  display: block;
-  padding: 10px 15px 10px 25px;
-  text-decoration: none;
-  color: #555;
-}
-
-#nav a:hover {
-  color: #81BAD5;
+  #home .header-inner {
+    margin-top: 0;
+  }
 }
 
 .footer {
