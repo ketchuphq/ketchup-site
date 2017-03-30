@@ -26,14 +26,6 @@ html, body, #app, .container {
   position: relative;
 }
 
-#home .header .attribution {
-  position: absolute;
-  bottom: 20px;
-  font-size: 14px;
-  right: 20px;
-  opacity: 0.2;
-}
-
 #home .header, #home .header a {
   color: white;
   text-shadow: 0 0 8px rgba(0,0,0,0.2);
@@ -79,10 +71,10 @@ html, body, #app, .container {
 
 #home .header {
   height: 100%;
-  background: #bc3e4d;
-  background-position: center center;
-  background-image: url(https://unsplash.it/g/1024/768/?random);
-  background-size: cover;
+  background: #0d2972;
+  background-image:
+    -webkit-radial-gradient(50% top, circle, rgba(188,62,77,0.7) 0%, rgba(189, 4, 4, 0.3) 75%),
+    -webkit-radial-gradient(right top, circle, #72100d 0%, rgba(132, 23, 36, 0.4) 57%);
 }
 
 #home .header-inner {
