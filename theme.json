@@ -1,5 +1,5 @@
 {
-  "name": "ketchup",
+  "name": "ketchup-site",
   "templates": {
     "home.html": {
       "hideContent": true,
