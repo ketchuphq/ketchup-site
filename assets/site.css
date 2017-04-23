@@ -71,10 +71,12 @@ html, body, #app, .container {
 
 #home .header {
   height: 100%;
-  background: #0d2972;
+  max-height: 600px;
+  min-height: 450px;
+  background: #bc3e4d;
   background-image:
-    -webkit-radial-gradient(50% top, circle, rgba(188,62,77,0.7) 0%, rgba(189, 4, 4, 0.3) 75%),
-    -webkit-radial-gradient(right top, circle, #72100d 0%, rgba(132, 23, 36, 0.4) 57%);
+    -webkit-radial-gradient(right top, circle, rgba(188,61,77,0.7) 0%, rgba(105, 11, 11, 0.3) 75%),
+    -webkit-radial-gradient(center bottom, circle, rgba(255, 236, 187, 0.3), rgba(132, 23, 36, 0.3) 57%);
 }
 
 #home .header-inner {
@@ -99,7 +101,6 @@ html, body, #app, .container {
   float: left;
   width: 50%;
   padding: 15px;
-  min-width: 300px;
 }
 
 #home .content-box p {
@@ -115,9 +116,13 @@ html, body, #app, .container {
 @media screen and (max-width: 480px) {
   #home .content-box {
     width: 100%;
+    padding: 0 15px;
   }
   #home .header-inner {
     margin-top: 0;
+  }
+  #home .header {
+    max-height: 300px;
   }
 }
 
